@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<style>
+  form {
+    width: 500px;
+    margin: 10px;
+    padding: 20px;
+    background-color: lightyellow;
+    border-radius: 10px;
+  }
+
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: compact;
+  }
+  input[type="date"]{
+       width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 5px gray;
+  }
+
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 5px gray;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+  }
+
+  input[type="submit"]:hover {
+    background-color: lightblue;
+  }
+  select{
+      color: blue;
+      font-family: "DejaVu Sans";
+      box-shadow: grey;
+  }
+
+</style>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>forms</title>
+</head>
+<body>
+<form action="navigation.html"method="">
+  <label for="fname">First Name</label>
+  <input type="text"id="fname"placeholder="FirstName"><br>
+  <label for="lname">Last Name</label>
+  <input type="text"id="lname"placeholder="lastName"><br>
+  <label for="email">Barua pepe</label>
+  <input type="email"id="email"placeholder="Email"><br>
+  <label for="dob">Date of Registration</label>
+  <input type="date"id="dob"placeholder="Date Of Birth"><br>
+  <label for="pass">Password</label>
+  <input type="password"id="pass"placeholder="Password"><br>
+    <label for="male">Male</label>
+    <input type="radio"id="male" name="gender">
+    <label for="female">Female</label>
+    <input type="radio"id="female" name="gender">
+    <label for="others">Others</label>
+    <input type="radio"id="others" name="gender"><br>
+    <label for="course">Which course are intrested</label>
+    <select name="course" id="course">
+        <option value="full">fullstack</option>
+        <option value="jav">Javascript</option>
+        <option value="python">Python</option>
+        <option value="cyber">Cyber security</option>
+        <option value="css">Css</option>
+        <option value="c++">C++</option>
+    </select>
+     <textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea> <br>
+    <label for="image">upload pic</label>
+    <input type="file"id="image"name="image"><br>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+     <label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor">
+  <input type="hidden" id="custId" name="custId" value="3487">
+  <input type="submit" value="Submit">
+     <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+  <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+     <label for="vol">Volume (between 0 and 50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+      <label for="gsearch">Search Google:</label>
+  <input type="search" id="gsearch" name="gsearch">
+    <label for="phone">Enter your phone number:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+      <label for="homepage">Add your homepage:</label>
+  <input type="url" id="homepage" name="homepage">
+     <label for="week">Select a week:</label>
+  <input type="week" id="week" name="week">
+
+  <input type="submit"value="Register">
+
+</form>
+</body>
+</html>
